@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Ideological-State</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* To rozciągnie zdjęcie na cały ekran bez deformacji */
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 75%; /* Wysokość 3/4 obrazka */
+            left: 5%; /* Margines z lewej strony */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Cień pod tekstem dla czytelności */
+        }
+
+        h1 {
+            font-size: 5vw; /* Wielkość napisu dostosuje się do ekranu */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-size: 2vw;
+            margin: 0;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="cosmos.jpg" alt="Cosmos Background">
+        
+        <div class="text-overlay">
+            <h1>Top-Ideological-State</h1>
+            <h3>Through Infinity</h3>
+        </div>
+    </div>
+
+</body>
+</html>
