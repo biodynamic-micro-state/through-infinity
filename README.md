@@ -1,2 +1,2 @@
-# through-infinity
-Manifesting the unified organism.
+# Inherent Oneness
+A unified organism through infinity.
