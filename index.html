@@ -64,3 +64,50 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Through Infinity</title>
+    <style>
+        /* Usuwamy marginesy i blokujemy przewijanie */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        /* Tło na całą stronę */
+        .container {
+            background-image: url('cosmos.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center; /* Środek w poziomie */
+            align-items: center;    /* Środek w pionie */
+        }
+
+        /* Sam guzik */
+        .guzik {
+            display: block;
+            width: 300px; /* Możesz tu zmienić rozmiar kuli */
+            height: auto;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="button1.png" alt="Guzik" class="guzik">
+    </div>
+
+</body>
+</html>
