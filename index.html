@@ -5,49 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Through Infinity</title>
     <style>
-        /* Reset i blokada przewijania */
+        /* Reset i ustawienia podstawowe */
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
+            min-height: 100%;
             background-color: #000;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
         }
 
-        /* Tło strony - Twoja tapeta */
+        /* Tło strony - Twoja tapeta (teraz pozwala na przewijanie) */
         .background-wrapper {
             background-image: url('cosmos.jpg');
             background-size: cover;
             background-position: center;
-            height: 100vh;
-            width: 100vw;
+            background-attachment: fixed; /* Tło stoi w miejscu podczas przewijania */
+            min-height: 100vh;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Napis na górze */
+            justify-content: flex-start;
         }
 
-        /* Stylizacja napisów */
+        /* Stylizacja napisów nagłówka */
         .content {
-            padding: 60px; /* Odstęp od krawędzi */
+            padding: 60px 60px 20px 60px;
             color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Cień dla lepszej czytelności */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
-            font-size: clamp(2rem, 8vw, 4rem); /* Elastyczny rozmiar czcionki */
+            font-size: clamp(2rem, 8vw, 4rem);
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 4px;
             font-weight: 700;
         }
 
-        p {
+        .subtitle {
             font-size: clamp(1rem, 3vw, 1.5rem);
             margin: 10px 0 0 0;
             opacity: 0.9;
             font-weight: 300;
+        }
+
+        /* --- SEKCJA PLIKÓW PDF --- */
+        .pdf-container {
+            padding: 20px 60px 60px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 800px; /* Ograniczamy szerokość listy dla czytelności */
+        }
+
+        .pdf-link {
+            background: rgba(255, 255, 255, 0.07); /* Delikatne tło przycisku */
+            backdrop-filter: blur(5px); /* Efekt oszronionego szkła */
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Efekt po najechaniu myszką */
+        .pdf-link:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(10px); /* Przesunięcie w prawo */
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .pdf-link::before {
+            content: "•";
+            margin-right: 15px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -56,11 +92,28 @@
     <div class="background-wrapper">
         <div class="content">
             <h1>TOP-IDEOLOGICAL-STATE</h1>
-            <p>Through infinity</p>
+            <p class="subtitle">Through infinity</p>
+        </div>
+
+        <div class="pdf-container">
+            <a href="Biegun negatyw a proces emanacji rdzenia istoty spiralnej.pdf" target="_blank" class="pdf-link">Biegun negatyw a proces emanacji rdzenia istoty spiralnej</a>
+            <a href="Bitwy międzywymiarowe, natura ras ludzkich i innych.pdf" target="_blank" class="pdf-link">Bitwy międzywymiarowe, natura ras ludzkich i innych</a>
+            <a href="Bunt aniołów.pdf" target="_blank" class="pdf-link">Bunt aniołów</a>
+            <a href="Delfiny.pdf" target="_blank" class="pdf-link">Delfiny</a>
+            <a href="Drzewa.pdf" target="_blank" class="pdf-link">Drzewa</a>
+            <a href="Kule skalisto-kryształowe systemu okna Słońca.pdf" target="_blank" class="pdf-link">Kule skalisto-kryształowe systemu okna Słońca</a>
+            <a href="Obecny wymiar piąty kuli świadomej Ziemi.pdf" target="_blank" class="pdf-link">Obecny wymiar piąty kuli świadomej Ziemi</a>
+            <a href="Oczy.pdf" target="_blank" class="pdf-link">Oczy</a>
+            <a href="Pole ochronno-równoważące Merkabah.pdf" target="_blank" class="pdf-link">Pole ochronno-równoważące Merkabah</a>
+            <a href="Pole ochronno-równoważąco-skupiające eye shell, muszla oka.pdf" target="_blank" class="pdf-link">Pole ochronno-równoważąco-skupiające eye shell, muszla oka</a>
+            <a href="Potęga istoty ludzkiej.pdf" target="_blank" class="pdf-link">Potęga istoty ludzkiej</a>
+            <a href="Proceder kontroli procesów inkarnacyjnych.pdf" target="_blank" class="pdf-item">Proceder kontroli procesów inkarnacyjnych</a>
+            <a href="Wielki Atraktory - kłębowisko negatywu wymiaru.pdf" target="_blank" class="pdf-link">Wielki Atraktor - kłębowisko negatywu wymiaru</a>
         </div>
     </div>
 
 </body>
 </html>
+
 
 
